@@ -24,7 +24,7 @@ public static class GameStartManagerUpdatePatch
 //タイマーとコード隠し
 public class GameStartManagerPatch
 {
-    private static float timer = 600f;
+    public static float timer = 600f;
     private static TextMeshPro warningText;
     public static TextMeshPro HideName;
     public static TextMeshPro GameCountdown;
