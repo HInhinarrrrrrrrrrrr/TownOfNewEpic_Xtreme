@@ -51,19 +51,19 @@ internal class ChangeRoleSettings
                 Main.NormalOptions.roleOptions.SetRoleRate(RoleTypes.Shapeshifter, 0, 0);
                 Main.NormalOptions.roleOptions.SetRoleRate(RoleTypes.Phantom, 0, 0);
             }
-            Main.SetRolesList = new();
+            Main.SetRolesList.Clear();
             Main.OverrideWelcomeMsg = "";
-            Main.AllPlayerKillCooldown = new();
-            Main.AllPlayerSpeed = new();
+            Main.AllPlayerKillCooldown.Clear();
+            Main.AllPlayerSpeed.Clear();
 
-            Main.LastEnteredVent = new();
-            Main.LastEnteredVentLocation = new();
+            Main.LastEnteredVent.Clear();
+            Main.LastEnteredVentLocation.Clear();
 
-            Main.AfterMeetingDeathPlayers = new();
-            Main.clientIdList = new();
+            Main.AfterMeetingDeathPlayers.Clear();
+            Main.clientIdList.Clear();
 
-            Main.CheckShapeshift = new();
-            Main.ShapeshiftTarget = new();
+            Main.CheckShapeshift.Clear();
+            Main.ShapeshiftTarget.Clear();
 
             Main.ShieldPlayer = Options.ShieldPersonDiedFirst.GetBool() ? Main.FirstDied : byte.MaxValue;
             Main.FirstDied = byte.MaxValue;
@@ -87,25 +87,25 @@ internal class ChangeRoleSettings
 
             ExtendedPlayerControl.PlayerSpeedRecord = new();
 
-            ExtendedPlayerControl.DisableKill = new();
-            ExtendedPlayerControl.DisableEnterVent = new();
-            ExtendedPlayerControl.DisableExitVent = new();
-            ExtendedPlayerControl.DisableShapeshift = new();
-            ExtendedPlayerControl.DisableSabotage = new();
-            ExtendedPlayerControl.DisableReport = new();
-            ExtendedPlayerControl.DisableMeeting = new();
-            ExtendedPlayerControl.DisablePet = new();
-            ExtendedPlayerControl.DisableMove = new();
+            ExtendedPlayerControl.DisableKill.Clear();
+            ExtendedPlayerControl.DisableEnterVent.Clear();
+            ExtendedPlayerControl.DisableExitVent.Clear();
+            ExtendedPlayerControl.DisableShapeshift.Clear();
+            ExtendedPlayerControl.DisableSabotage.Clear();
+            ExtendedPlayerControl.DisableReport.Clear(); 
+            ExtendedPlayerControl.DisableMeeting.Clear();
+            ExtendedPlayerControl.DisablePet.Clear();
+            ExtendedPlayerControl.DisableMove.Clear();
 
-            ExtendedPlayerControl.HasDisabledKill = new();
-            ExtendedPlayerControl.HasDisabledEnterVent = new();
-            ExtendedPlayerControl.HasDisabledExitVent = new();
-            ExtendedPlayerControl.HasDisabledShapeshift = new();
-            ExtendedPlayerControl.HasDisabledSabotage = new();
-            ExtendedPlayerControl.HasDisabledReport = new();
-            ExtendedPlayerControl.HasDisabledMeeting = new();
-            ExtendedPlayerControl.HasDisabledPet = new();
-            ExtendedPlayerControl.HasDisabledMove = new();
+            ExtendedPlayerControl.HasDisabledKill.Clear();
+            ExtendedPlayerControl.HasDisabledEnterVent.Clear();
+            ExtendedPlayerControl.HasDisabledExitVent.Clear();
+            ExtendedPlayerControl.HasDisabledShapeshift.Clear();
+            ExtendedPlayerControl.HasDisabledSabotage.Clear();
+            ExtendedPlayerControl.HasDisabledReport.Clear();
+            ExtendedPlayerControl.HasDisabledMeeting.Clear();
+            ExtendedPlayerControl.HasDisabledPet.Clear();
+            ExtendedPlayerControl.HasDisabledMove.Clear();
 
             //名前の記録
             RPC.SyncAllPlayerNames();
