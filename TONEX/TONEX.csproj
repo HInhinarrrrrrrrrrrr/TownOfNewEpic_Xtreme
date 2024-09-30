@@ -12,8 +12,7 @@
 		
 		<Configurations>Debug;Release</Configurations>
 		<BaseOutputPath>..\Export</BaseOutputPath>
-		<NoWarn>MSB3246, CA2211, IDE0044, IDE0028, IDE0300</NoWarn>
-        <AmongUs>C:\Users\User\Desktop\among us\TOHEx\among us</AmongUs>
+		<NoWarn>MSB3246, CA2211, IDE0044, IDE0028, IDE0300</NoWarn>  
 	</PropertyGroup>
 
 	<ItemGroup>
