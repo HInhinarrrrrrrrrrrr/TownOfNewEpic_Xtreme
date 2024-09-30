@@ -112,6 +112,8 @@ public enum CustomRPC
     //游戏模式
     SyncFFAPlayer,
     SyncFFANameNotify,
+
+    SyncLobbyTimer
 }
 public enum Sounds
 {
@@ -310,6 +312,9 @@ internal class RPCHandlerPatch
                     Main.SetRolesList[CustomRoleTargetId].Add(allRoles);
 
                 }
+                break;
+            case CustomRPC.SyncLobbyTimer:
+                GameStartManagerPatch.timer = reader.ReadPackedInt32();
                 break;
             case CustomRPC.SetRoleInGame:
                 PlayerControlSetRolePatch.playanima = reader.ReadBoolean();
